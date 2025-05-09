@@ -4,7 +4,7 @@ An exprimental CircuitPython module to interface with MS5837-30BA and MS5837-02B
 ## Testing
 This library has been tested on:
 - ESP32-S3 running CircuitPython 9.2.7 & 9.2.1 with a Blue Robotics Bar02 Sensor
-- Raspberry PI 4B running Adafruit Blinka with a Blue Robotics Bar02 Sensor
+- Raspberry PI 4B running Adafruit Blinka & Raspberry Pi OS 12 with a Blue Robotics Bar02 Sensor
 
 # Dependencies
 This driver depends on:
@@ -14,4 +14,4 @@ This driver depends on:
 # Important Information
 - This library will not be rececing any major updates or changes, I do not have access to the hardware anymore.
 - Certain functionality of the BlueRobotics Python library are missing or broken.
-- The BlueRobotics sensors lack pull-up resistors, which are required for i2C.
+- The BlueRobotics sensors lack pull-up resistors, which are required for i2C if your MCU/SBC doesn't have its own.
