@@ -89,6 +89,7 @@ class MS5837():
         self._D1 = 0
         self._D2 = 0
         self._C = []
+        self._FD = FD
 
         with self._i2c_device:
             self._i2c_device.write(bytes([self._MS5837_RESET])) # Reset sensor
